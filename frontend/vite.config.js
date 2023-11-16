@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://japh-server.onrender.com',
+        target: 'https://44.226.145.213',
         //http://localhost:5000
         changeOrigin: true,
         //rewrite: (path) => path.replace(/^\/api/, ''),
