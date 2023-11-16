@@ -2,7 +2,7 @@ require('dotenv').config()
 const express = require('express')
 const mongoose = require('mongoose')
 const http = require('http')
-const registerRoutes = require('./Routes/registerRoutes')
+const registerRoutes = require('./api/registerRoutes')
 
 
 // express app
@@ -17,7 +17,7 @@ app.use((req, res, next) => {
 })
 
 // Routes
-app.use('/register', registerRoutes)
+app.use('/api/register', registerRoutes)
 
 
 // Database connection

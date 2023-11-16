@@ -1,14 +1,16 @@
 {
     "functions": {
-      "api": {
+      "api/register": {
+        "handler": "api/registerRoutes.js",
         "memory": 512
       }
     },
     "routes": [
       {
-        "src": "/api/(.*)",
-        "dest": "/api/$1"
+        "src": "/api/register",
+        "dest": "/api/register"
       }
     ]
   }
+  
   
