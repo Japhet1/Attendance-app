@@ -17,7 +17,7 @@ app.use((req, res, next) => {
 })
 
 // Routes
-app.use('/api/register', registerRoutes)
+app.use('/register', registerRoutes)
 
 
 // Database connection
