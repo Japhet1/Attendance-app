@@ -31,3 +31,5 @@ mongoose.connect(process.env.MONG_URI, { useNewUrlParser: true, useUnifiedTopolo
     console.log(error)
 })
 
+module.exports = app;
+
