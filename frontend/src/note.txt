@@ -1,0 +1,106 @@
+import React from 'react';
+import { useTable } from 'react-table';
+
+const DataTable = ({ columns, data }) => {
+  const {
+    getTableProps,
+    getTableBodyProps,
+    headerGroups,
+    rows,
+    prepareRow,
+  } = useTable({ columns, data });
+
+  return (
+    <table {...getTableProps()} style={{ borderSpacing: '0', width: '100%' }}>
+      <thead>
+        {headerGroups.map(headerGroup => (
+          <tr {...headerGroup.getHeaderGroupProps()}>
+            {headerGroup.headers.map(column => (
+              <th {...column.getHeaderProps()} style={{ borderBottom: '1px solid black', background: 'aliceblue', padding: '8px' }}>
+                {column.render('Header')}
+              </th>
+            ))}
+          </tr>
+        ))}
+      </thead>
+      <tbody {...getTableBodyProps()}>
+        {rows.map(row => {
+          prepareRow(row);
+          return (
+            <tr {...row.getRowProps()}>
+              {row.cells.map(cell => (
+                <td {...cell.getCellProps()} style={{ borderBottom: '1px solid black', padding: '8px' }}>
+                  {cell.render('Cell')}
+                </td>
+              ))}
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  );
+};
+
+// Example usage
+const App = () => {
+  const columns = [
+    {
+      Header: 'Name',
+      accessor: 'name', // accessor is the "key" in the data
+    },
+    {
+      Header: 'Age',
+      accessor: 'age',
+    },
+    {
+      Header: 'Location',
+      accessor: 'location',
+    },
+  ];
+
+  const data = [
+    { name: 'John Doe', age: 25, location: 'New York' },
+    { name: 'Jane Smith', age: 30, location: 'San Francisco' },
+    // Add more data as needed
+  ];
+
+  return (
+    <div>
+      <h1>Data Table Example</h1>
+      <DataTable columns={columns} data={data} />
+    </div>
+  );
+};
+
+export default App;
+
+
+<table className="">
+                            <table>
+                                <th>
+                                <tr className="font-semibold text-start bg-purple-100">
+                                    <td className="w-20 p-3 border border-purple-300">#</td>
+                                    <td className="w-44 p-3 border border-purple-300">Name</td>
+                                    <td className="w-44 p-3 border border-purple-300">Contact</td>
+                                    <td className="w-44 p-3 border border-purple-300">Time in</td>
+                                    <td className="w-44 p-3 border border-purple-300">Time out</td>
+                                    <td className="w-44 p-3 border border-purple-300">Status</td>
+                                </tr>
+                                </th>
+                                <tbody>
+                                    {registers && registers.map((register, index) => (
+                                        
+                                        <trow key={index}>
+                                            <td className=''>{index +1}</td>
+                                            <td className=''>{`${register.firstname} ${register.lastname}`}</td>
+                                            <td className="">{`0${register.contact}`}</td>
+                                            <td className="">{register.createdAt}</td>
+                                            <td className="">{register.status === 'sign in'? 'xxxxxxxxxx' : register.updatedAt}</td>
+                                            <td className="">{register.status}</td>
+                                            <td className=""><span><SignOutDetail register={register}/></span></td>
+                                            <td className=""><span><DeleteButton register={register}/></span></td>
+                                        </trow>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </table> 

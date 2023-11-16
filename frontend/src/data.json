@@ -1,0 +1,204 @@
+
+    {
+        "nav" : {
+            "name": "Gunstein.dev",
+            "menu": [
+                {"link": "About me", "href": "#about"},
+                {"link": "Skills", "href": "#skill"},
+                {"link": "Projects", "href": "#project"},
+                {"link": "Education", "href": "#education"},
+                {"link": "Interest", "href": "#interest"},
+                {"link": "Contact", "href": "#contact"}
+            ]
+        },
+        "header": {
+            "welcome": "Hello! i'm Japhet Passah",
+            "position": "Software Developer.",
+            "summary": "Enthusiastic and detail-oriented Junior Software Developer who is eager to contribute to dynamic projects and learn from experienced mentors in the software development industry."
+        },
+        "skill": [
+            {
+                "name": "Front-end",
+                "stack": [
+                "Html",
+                "CSS",
+                "TypeScript",
+                "JavaScript",
+                "React",
+                "Next.JS",
+                "Tailwind",
+                "Bootstrap"
+                ]
+            },
+            {
+                "name": "Back-end",
+                "stack": [
+                "Node.JS",
+                "Express.JS",
+                "Rest API",
+                "Prisma"
+                ]
+            },
+            {
+                "name": "Database",
+                "stack": [ "MongoDB"]
+            },
+            {
+                "name": "Design",
+                "stack": [ "Figma" ]
+            },
+            {
+                "name": "Professional Skills",
+                "stack": [
+                "Adaptability",
+                "Teamwork",
+                "Collaboration"
+                ]
+            }
+        ],
+        "project": [
+            {
+                "name": "Devjobs Web App",
+                "description": "Devjobs-app is a web application where someone can search for different developer and engineer jobs. You can search by filtering base on company, position, and country.",
+                "src": "devjob-app.jpg",
+                "stack": [
+                    {"item": "JavaScript"},
+                    {"item": "React"},
+                    {"item": "Bootstrap"},
+                    {"item": "Json data"}
+                ]
+            },
+            {
+                "name": "Attendance App",
+                "description": "Devjobs-app is a web application where someone can search for different developer and engineer jobs. You can search by filtering base on company, position, and country.",
+                "src": "devjob-app.jpg",
+                "stack": [
+                    {"item": "JavaScript"},
+                    {"item": "React"},
+                    {"item": "Bootstrap"},
+                    {"item": "Node JS"},
+                    {"item": "Express JS"},
+                    {"item": "MongoDB"}
+                ]
+            },
+            {
+                "name": "KD-Horizon",
+                "description": "Devjobs-app is a web application where someone can search for different developer and engineer jobs. You can search by filtering base on company, position, and country.",
+                "src": "kd-horizon1.jpg",
+                "stack": [
+                    {"item": "JavaScript"},
+                    {"item": "Next JS"},
+                    {"item": "Tailwind CSS"}   
+                ]
+            },
+            {
+                "name": "Gunstein.dev",
+                "description": "Devjobs-app is a web application where someone can search for different developer and engineer jobs. You can search by filtering base on company, position, and country.",
+                "src": "gunstein.dev1.jpg",
+                "stack": [
+                    {"item": "JavaScript"},
+                    {"item": "React"},
+                    {"item": "Vite"},
+                    {"item": "Json data"},
+                    {"item": "Tailwind CSS"}   
+                ]
+            },
+            {
+                "name": "Quiz-app",
+                "description": "Devjobs-app is a web application where someone can search for different developer and engineer jobs. You can search by filtering base on company, position, and country.",
+                "src": "quiz-app.jpg",
+                "stack": [
+                    {"item": "TypeScript"},
+                    {"item": "Next JS"},
+                    {"item": "Prisma"},
+                    {"item": "Tailwind CSS"},
+                    {"item": "PostgreSQL"}   
+                ]
+            }
+        ],
+        "education": {
+            
+                "physical" : [            
+                    {
+                        "name": "Certificate of participation in Software Development Graduate Programme",
+                        "company": "Amalitech",
+                        "date": "June 2022 - March 2023",
+                        "country": "Accra-Ghana",
+                        "website": "https://amalitech.org/"
+                    },
+                    {
+                        "name": "Certificate in Comprehensive JavaScript",
+                        "company": "Codecademy",
+                        "date": "August 2022",
+                        "country": "Accra-Ghana",
+                        "website": "https://www.codecademy.com/"
+                    },
+                    {
+                        "name": "BSc Information Technology",
+                        "company": "Accra Institute of Technology",
+                        "date": "September 2016 - December 2021",
+                        "country": "Accra-Ghana",
+                        "website": "https://www.ait.edu.gh/"
+                    },
+                    {
+                        "name": "Diploma in Database Technology",
+                        "company": "IPMC College of Technology",
+                        "date": "May 2013 - November 2014",
+                        "country": "Accra-Ghana",
+                        "website": "https://www.ipmctraining.com/"
+                    }
+                ],
+          
+      
+                "online": {
+                    "name": "Youtube channels Tutorial",
+                    "content": [ 
+                        {
+                            "name": "Net Ninja:",
+                            "items": [ 
+                                {"label": "MERN Stack"},
+                                {"label": "MERN Athentication"},
+                                {"label": "Complete MongoDB"},
+                                {"label": "Node.Js Crash Course"},
+                                {"label": "TypeScript"},
+                                {"label": "Next.Js Masterclass"},
+                                {"label": "React Reuter"}
+                            ]
+                        }, 
+                        {
+                            "name": "Codevolution:",
+                            "items": [
+                                {"label": "redux Toolkit"},
+                                {"label": "React Testing"},
+                                {"label": "Material UI"}
+                            ]
+                        }
+                    ]
+                }
+            
+        },
+        "interest": [
+            {
+                "name": "Languages",
+                "content": [
+                    {"item": "English"},
+                    {"item": "French"},
+                    {"item": "German"}
+                ]
+            },
+            {
+                "name": "Hobbies",
+                "content": [
+                    {"item": "Movie"},
+                    {"item": "Music"},
+                    {"item": "Football"}
+                ] 
+            }
+        ],
+        "contact": [
+            {"name": "phone", "content": "+(233) 557-444-157"},
+            {"name": "whatsapp","content": "+(233) 557-444-157"},
+            {"name": "mail", "content": "gunstein.dev@gmail.com"}
+        ]
+        
+    }
