@@ -1,7 +1,17 @@
 {
-    "version": 2,
-    "builds": [{"src": "*.js", "use": "@vercel/node"}],
-    "routes": [{"src": "/(.*)", "dest": "/"}]
-  }
-  
-  
+  "functions": {
+    "api": {
+      "memory": 512
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/register",
+      "dest": "/api/register"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/server.js"
+    }
+  ]
+}
