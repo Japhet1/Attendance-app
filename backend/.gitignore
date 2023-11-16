@@ -28,4 +28,4 @@ yarn-error.log*
 .pnp.js
 
 # testing
-#/coverage
+/coverage
