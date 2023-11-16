@@ -1,7 +1,7 @@
 {
     "functions": {
       "api/register": {
-        "handler": "api/registerRoutes.js",
+        "handler": "api/register.js",
         "memory": 512
       }
     },
