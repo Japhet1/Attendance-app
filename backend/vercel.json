@@ -1,18 +1,8 @@
 {
   "functions": {
-    "api/register/**/*.js": {
-      "maxDuration": 30,
-      "memory": 512
+    "api/server.js": {
+      "memory": 3008,
+      "maxDuration": 60
     }
-  },
-  "routes": [
-    {
-      "src": "/api/register",
-      "dest": "/api/register"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/server.js"
-    }
-  ]
+  }
 }
