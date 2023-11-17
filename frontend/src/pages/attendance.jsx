@@ -14,7 +14,7 @@ const Attendance = () => {
     
     useEffect (() => { 
         const fetchRegister = async () => {
-            const response = await fetch ('/api/register/')
+            const response = await fetch ('https://japh-server.onrender.com/api/register/')
             const json = await response.json()
            
             if (response.ok) {

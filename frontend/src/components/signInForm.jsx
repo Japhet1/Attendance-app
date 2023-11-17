@@ -20,7 +20,7 @@ const SignInForm = () => {
         console.log("result",firstname,lastname,contact)
         
         const register = { firstname, lastname, contact, status: 'sign in' }
-        const response = await fetch ('/api/register/', {
+        const response = await fetch ('https://japh-server.onrender.com/api/register/', {
             method:'POST',
             body:JSON.stringify(register),
             headers: {
