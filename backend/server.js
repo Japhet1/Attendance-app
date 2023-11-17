@@ -11,11 +11,7 @@ const app = express()
 const server = http.createServer(app)
 
 // Middleware
-app.use(cors({
-    origin: 'attendance-app-client.vercel.app', // Replace with your Vite app's URL
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    credentials: true, // Enable credentials (cookies, authorization headers, etc.)
-  }));
+app.use(cors());
 
 app.use(express.json())
 app.use((req, res, next) => {
