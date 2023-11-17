@@ -7,7 +7,7 @@ const SignOutDetail = ({ register }) => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         
-        const response = await fetch ('/api/register/' + register._id, {
+        const response = await fetch ('https://japh-server.onrender.com/api/register/' + register._id, {
             method:'PUT',
             body:JSON.stringify({
                 status: 'sign out'

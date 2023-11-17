@@ -5,7 +5,7 @@ const DeleteButton = ({ register }) => {
     const { dispatch } = useRegisterContext()
 
     const handleClick = async () => {
-        const response = await fetch ('/api/register/' + register._id, {
+        const response = await fetch ('https://japh-server.onrender.com/api/register/' + register._id, {
             method: 'DELETE',
         })
         const json = await response.json()
